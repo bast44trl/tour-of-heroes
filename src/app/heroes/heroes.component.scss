@@ -1,0 +1,71 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  height: 20em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heroes li {
+  display: flex;
+  width: 18em;
+}
+
+.heroes button {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: stretch;
+  height: 3em;
+}
+
+.heroes button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: 0.1em;
+}
+
+.heroes button:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.heroes button.selected {
+  background-color: black;
+  color: white;
+}
+
+.heroes button.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.heroes button.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.heroes .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  color: white;
+  min-width: 3em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: 0.8em;
+  border-radius: 6px 0 0 6px;
+}
+
+.heroes .name {
+  align-self: center;
+}
